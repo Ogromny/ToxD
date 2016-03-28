@@ -126,7 +126,7 @@ extern (C)
      * byte is an XOR of all the even bytes (0, 2, 4, ...), the second byte is an
      * XOR of all the odd bytes (1, 3, 5, ...) of the Public Key and nospam.
      */
-    TOX_ADDRESS_SIZE = (TOX_PUBLIC_KEY_SIZE + uint.sizeof * 2), // not exactly but work
+    TOX_ADDRESS_SIZE = (TOX_PUBLIC_KEY_SIZE + uint.sizeof + ushort.sizeof), // not exactly but work
     /**
      * Maximum length of a nickname in bytes.
      */
